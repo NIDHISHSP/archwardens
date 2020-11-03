@@ -11,48 +11,81 @@
 </head>
 <body>
     <div class="container">
+        <!-- tabs buttons for navigation -->
         <nav id="navbar" class="links">
-            <a href="#home">Home</a>
-            <a href="#servicesAndSkills">Services And Skills</a>
-            <a href="#contactUs">Contact Us</a>
-            <a href="#about">About</a>
-            <a href="#social">Social</a>
-            <a href="#projects">Projects</a>
+            <button class="tabBtn" onclick="activateTab(event,'home')">Home</button>
+            <button class="tabBtn active" onclick="activateTab(event,'about')">About</button>
+            <button class="tabBtn" onclick="activateTab(event,'servicesAndSkills')">Skills And Services</button>
+            <button class="tabBtn" onclick="activateTab(event,'projects')">Projects</button>
+            <button class="tabBtn" onclick="activateTab(event,'social')">Social</button>
+            <button class="tabBtn" onclick="activateTab(event,'contactUs')">Contact Us</button>
         </nav>
-        <div class="home" id="home">
-            <div class="backgroundImage"></div>
-            <img src="images/logo.svg" alt="logo" class="logo">
-            <div class="details">
-                <h1 id="heading">The Archwardens</h1>
-                <h3>"WE DESIGN, WE CREATE."</h3>
-                <p class="homepara">
-                    Let us take you into a deeper experience,
-                    make a moment a lasting conveyable memory.
-                    Let us help build your tribe.
-                    We love what we do and we do what our clients love & work
-                    with great clients all over the world to
-                    create thoughtful and purposeful websites.
-                    
-                </p>
-                <p class="homepara">
-                    "Give us a chance to make a brilliant creation. Help us give shape to your ideas.
-                    We help you accomplish your desired websites. We are <span>The Archwardens</span> ."
-                </p>
-            </div>
-            <div class="search">
-                <input type="search" name="search" id="searchBar" placeholder="Type Here">
-                <button type="submit" id="searchBtn">Search</button>
+        <div class="tabs" id="home">
+            <div class="home" id="home">
+                <div class="backgroundImage"></div>
+                <img src="images/logo.svg" alt="logo" class="logo">
+                <div class="details">
+                    <h1 id="heading">The Archwardens</h1>
+                    <h3>"WE DESIGN, WE CREATE."</h3>
+                    <p class="homepara">
+                        Let us take you into a deeper experience,
+                        make a moment a lasting conveyable memory.
+                        Let us help build your tribe.
+                        We love what we do and we do what our clients love & work
+                        with great clients all over the world to
+                        create thoughtful and purposeful websites.
+                        
+                    </p>
+                    <p class="homepara">
+                        "Give us a chance to make a brilliant creation. Help us give shape to your ideas.
+                        We help you accomplish your desired websites. We are <span>The Archwardens</span> ."
+                    </p>
+                </div>
+                <div class="search tabs">
+                    <input type="search" name="search" id="searchBar" placeholder="Type Here">
+                    <button type="submit" id="searchBtn">Search</button>
+                </div>
             </div>
         </div>
     
-        <div class="about" id="about">
-            
-            
+        <div class="about tabs default" id="about">
+            <h1> ABOUTS </h1>
+            <div class="workspace">
+                <img src="images/workspace.jpg" width="500px">
+                <article>
+                    <p>
+                        We are The Archwardens. We are a group of six members specialized in different aspects of
+                        designing and creating software programs. We are also capable of editing and assembling 
+                        recorded raw material into a suitable finished product ready for broadcasting. We are professionalized in visualizing and creating
+                        graphics including illustrations, logos, layouts, photos, websites,
+                        magazines and more.
+                    </p>
+                    <p>
+                        We are passionate in working for a community
+                    .   We are not here to just earn money but to ensure that the 
+                       clients get the best services at one's fingertips. 
+                       Our aim is to convert your dreams into reality.
+                  
+
+                        
+                    </p>
+                </article>
+            </div>
+
+          
         </div>
-        <div class="contactUs" id="contactUs"></div>
-        <div class="servicesAndSkills" id="servicesAndSkills"></div>
-        <div class="projects" id="projects"></div>
-        <div class="social" id="social"></div>
+        <div class="contactUs tabs" id="contactUs">
+            <h1>Contact Us</h1>
+        </div>
+        <div class="servicesAndSkills tabs" id="servicesAndSkills">
+            <h1>skills and services</h1>
+        </div>
+        <div class="projects tabs" id="projects">
+            <h1>Projects</h1>
+        </div>
+        <div class="social tabs" id="social">
+            <h1>social</h1>
+        </div>
     </div>
     
     <footer id="socialIcon">
