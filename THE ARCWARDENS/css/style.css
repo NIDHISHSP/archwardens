@@ -8,13 +8,12 @@
     --navigation: #333178;
     
 }
-
-
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+
 
 
 /* main-body */
@@ -24,24 +23,46 @@
 }
 
 
+
 /* navigation bar for the website */
 /* navbar section */
 #navbar{
     background-color:var(--dark_background);
     padding: 10px;
+    /* text-transform: uppercase; */
 }
 .links{
     display: grid;
     grid-template-columns: auto auto auto auto auto auto;
     min-height: 50px;
 }
-a{
+.tabBtn{
     color: var(--light_background);
+    background-color: transparent;
+    border: transparent;
     text-decoration: none;
     font-size: larger;
     font-weight: bolder;
     text-transform: uppercase;
+    outline: none;
 }
+/* active tab element display */
+.active{
+    border-bottom: 5px solid orange;
+}
+
+
+
+/* tabs content */
+.tabs{
+    display: none;
+}
+.default{
+    display: block;
+}
+
+
+
 
 
 /* first page of the website - Homepage */
@@ -80,7 +101,6 @@ a{
     padding: 1rem auto;
     border-radius: 20px;
     box-shadow: #000000 2px 2px 10px;
-
 }
 
 /* background image for homepage with opacity */
@@ -143,6 +163,10 @@ a{
 }
 
 
+
+
+
+
 /* footer social media with icons */
 #socialIcon{
     display: flex;
@@ -164,9 +188,7 @@ a{
 .fab{
     color: var(--light_background);
 }
-.about{
-    
-}
+
 
 
 
@@ -181,26 +203,15 @@ a{
         clip-path: polygon(15% 10%,85% 10%,100% 100%,0 100%);
     }
 }
-@keyframes hover{
-    from{
-        color: #ffffff;
-        margin-left: -10px;
-    }
-    to {
-        color: var(--primary);
-     }
-}
+
+
 
 
 
 /* hover effects applied in the website*/
-.links a:hover{
+.links .tabBtn:hover{
     color: var(--primary);
-    transition:ease-in;
+    transition: ease-in;
     transition-duration: 0.3s;
-    animation-name: hover;
-    animation-duration: 0.2s;
+    transform: scale(1.2);
 }
-   
-        
-    
